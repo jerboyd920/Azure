@@ -50,11 +50,13 @@ Machines within the network can only be accessed by _____.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Name      | Function     | IP Address | Operating System |
+|-----------|--------------|------------|------------------|
+| Jump Box  | Gateway      | 10.0.0.4   | Linux - Ubuntu   |
+| Elk Server| Cloud Monitor| 10.1.0.5   | Linux - Ubuntu   |
+| Web-1     | Web Server   | 10.0.0.5   | Linux - Ubuntu   |
+| Web-2     | Web Server   | 10.0.0.7   | Linux - Ubuntu   |
+| DVWA-VM3  | Web Server   | 10.0.0.6   | Linux - Ubuntu   |
 
 ### Elk Configuration
 
