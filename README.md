@@ -8,7 +8,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
   - [pentest.yml](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/pentest.yml)
   - [install-elk.yml](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/install-elk.yml)
-  - [filebeat-config.yml](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/filebeat-playbook.yml
+  - [filebeat-config.yml](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/filebeat-playbook.yml)
   - [filebeat](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/filebeat-playbook.yml)
   - [metricbeat-config](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/metricbeat-config.yml)
   - [metricbeat](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/metricbeat-playbook.yml)
@@ -78,7 +78,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+<figure><img src="/Images/Docker%20ps.png"><fig caption></fig caption></figure>
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
