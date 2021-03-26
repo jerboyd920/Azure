@@ -55,12 +55,13 @@ Machines within the network can only be accessed by _____.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name      | Publicly Accessible | Allowed IP Addresses |
-|-----------|---------------------|----------------------|
-| Jump Box  |         No          |      76.29.7.67      |
-| Elk Server|         No          | 76.29.7.67         
-|          |                     |                      |
-
+| Name      | Publicly Accessible | Allowed IP Addresses  |
+|-----------|---------------------|-----------------------|
+| Jump Box  |        Yes          |      76.29.7.67       |
+| Elk Server|        Yes          | 76.29.7.67 & 10.0.0.4 |        
+| Web-1     |         No          |      10.0.0.4         |
+| Web-1     |         No          |      10.0.0.4         |
+| DVWA-VM3. |         No          |      10.0.0.4         |
 
 
 ### Elk Configuration
