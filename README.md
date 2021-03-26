@@ -49,21 +49,19 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the Jump Box and Elk Server machines can accept connections from the Internet via a static IP address. 
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by the docker container on the Jump Box.
 
 A summary of the access policies in place can be found in the table below.
 
 | Name      | Publicly Accessible | Allowed IP Addresses  |
 |-----------|---------------------|-----------------------|
-| Jump Box  |        Yes          |      76.29.7.67       |
-| Elk Server|        Yes          | 76.29.7.67 & 10.0.0.4 |        
+| Jump Box  |         No          |      76.29.7.67       |
+| Elk Server|         No          | 76.29.7.67 & 10.0.0.4 |        
 | Web-1     |         No          |      10.0.0.4         |
 | Web-1     |         No          |      10.0.0.4         |
-| DVWA-VM3. |         No          |      10.0.0.4         |
+| DVWA-VM3  |         No          |      10.0.0.4         |
 
 
 ### Elk Configuration
@@ -72,9 +70,13 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+
+- Install docker.io
+- Install python3-pip
+- Install docker package
+- Increase virtual memory
+- publish ports 5601, 9200, 5044
+- enable docker on boot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -82,19 +84,27 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+
+|  Name    |  IP Adress |
+|----------|------------|
+| Web-1    | 10.0.0.5   |
+| Web-2    | 10.0.0.7   |
+| DVWA-VM3 | 10.0.0.6   |
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+
+-FileBeats
+-MetricBeats
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 
+- FileBeats collects systems logs of changes to the systems on which it's installed. An example would be if there was a failed login attempt to a machine which would be documented in the auth.log.
+- MetricBeats monitors and reports system metrics. It analyzes CPU, memory and traffic usage. 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
+- Copy the filebeat- file to _____.
 - Update the _____ file to include...
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
