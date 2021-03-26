@@ -6,10 +6,13 @@ The files in this repository were used to configure the network depicted below.
   
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the install-elk.yml file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
-
+  - [pentest.yml](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/pentest.yml)
+  - [install-elk.yml](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/install-elk.yml)
+  - [filebeat](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/filebeat-playbook.yml)
+  - [metricbeat](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/metricbeat-playbook.yml)
+  
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -51,6 +54,12 @@ Machines within the network can only be accessed by _____.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
 
 A summary of the access policies in place can be found in the table below.
+
+| Name      | Publicly Accessible | Allowed IP Addresses |
+|-----------|---------------------|----------------------|
+| Jump Box  |         No          |      76.29.7.67      |
+| Elk Server|         No          | 76.29.7.67         
+|          |                     |                      |
 
 
 
