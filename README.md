@@ -5,13 +5,13 @@ The files in this repository were used to configure the network depicted below.
 <figure><img src="/Diagrams/Azure%20Network%20Diagram.png"><figcaption></figcaption></figure>
   
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the install-elk.yml file may be used to install only certain pieces of it, such as Filebeat.
-
-  - [pentest.yml](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/pentest.yml)
-  - [install-elk.yml](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/install-elk.yml)
-  - [filebeat-config.yml](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/filebeat-playbook.yml)
-  - [filebeat](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/filebeat-playbook.yml)
-  - [metricbeat-config](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/metricbeat-config.yml)
-  - [metricbeat](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/metricbeat-playbook.yml)
+|---------------------------------------------------------------------------------------------------------------|
+| - [pentest.yml](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/pentest.yml)                  |
+| - [install-elk.yml](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/install-elk.yml)          |
+| - [filebeat-config.yml](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/filebeat-playbook.yml)|
+| - [filebeat](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/filebeat-playbook.yml)           |
+| - [metricbeat-config](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/metricbeat-config.yml)  |
+| - [metricbeat](https://github.com/jerboyd920/Azure-Project-1/blob/main/Ansible/metricbeat-playbook.yml)       |
   
 This document contains the following details:
 - Description of the Topology
