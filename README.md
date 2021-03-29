@@ -109,6 +109,3 @@ SSH into the control node and follow the steps below:
 - Update the filebeat-config.yml file to include the Elk Machine IP Address and port 9200 (<IP Address>:<port>) as the host option on line 1106, and add the Elk machine address and port 5601 (<IP address>:<port>) as the host option on line 1806.
 - Run the playbook, and navigate to http://<Elk IP Address>:5601/app/kibana to check that the installation worked as expected.
 
-
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
