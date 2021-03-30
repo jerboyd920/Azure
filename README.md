@@ -105,7 +105,7 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the filebeat-config.yml file to /etc/Ansible/files. Copy the filebeat-playbook.yml to /etc/Ansible/roles directory.
+- Copy the filebeat-config.yml file to /etc/ansible/files. Copy the filebeat-playbook.yml to /etc/ansible/roles directory.
 - Update the filebeat-config.yml file to include the Elk Machine IP Address and port 9200 (<IP Address>:<port>) as the host option on line 1106, and add the Elk machine address and port 5601 (<IP address>:<port>) as the host option on line 1806.
 - Run the playbook, and navigate to http://<Elk IP Address>:5601/app/kibana to check that the installation worked as expected.
 
